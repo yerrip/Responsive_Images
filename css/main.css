@@ -1,0 +1,204 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #8AA1BF;
+  overflow-x: hidden;
+}
+
+section {
+opacity: 0;
+transform: translate(0, 35px);
+transition: all 2s;
+}
+
+section.visible {
+opacity: 1;
+transform: translate(0, 0);
+}
+
+article {
+  margin-top: 200px;
+  max-width: 980px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  padding-left: 20px;
+  box-shadow: 0px 2px 7px rgba(75, 75, 75, 0.7);
+
+}
+
+header img {
+  width: 200px;
+}
+
+h1 {
+  color: #FFF;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 42px;
+  margin-top: 200px;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 28px;
+  max-width: 700px;
+  color: #CAD8EA;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: 6px;
+  color: #CAD8EA;
+}
+
+.author {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2.22px;
+  color: #F0F3F7;
+}
+
+section img {
+  max-width: 100%;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.25s;
+  margin-right: 50px;
+}
+
+img:hover {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+.hero {
+  height: 500px;
+  background-color: #aaa;
+  width: 100%;
+  margin-top: 0px;
+  padding: 50px;
+  background-color: #355176;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+article section p {
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: 1px;
+  max-width: 50%;
+  margin-top: 50px;
+}
+
+article section h1 {
+  margin-top: 50px;
+}
+
+.flourish {
+  width: 100px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #555;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+footer a {
+  text-decoration: none;
+    color: #eee;
+}
+
+footer img {
+  width: 120px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 36px;
+    max-width: 400px;
+    line-height: 1.5;
+  }
+h2 {
+  max-width: 500px;
+  font-size: 22px;
+}
+
+.author {
+  font-size: 14px;
+}
+
+.hero {
+  padding: 25px;
+}
+
+article {
+  margin-top: 75px;
+  padding-left: 30px;
+}
+
+article section p {
+  max-width: 90%;
+}
+
+}
+
+@media (max-width: 425px) {
+
+  article {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 25px;
+  }
+
+  h1 {
+    margin-top: 75px;
+  }
+
+  h2 {
+    width: 300px;
+  }
+
+  .author {
+    width: 260px;
+    line-height: 2;
+  }
+}
